@@ -54,7 +54,7 @@
         },
         "vnet": {
             "name": "[concat(variables('namespace'), 'vnet')]",
-            "prefix": "10.63.1.64/26"
+            "prefix": "10.63.1.0/25"
         },
         "gtwySubnet": {
             "name": "[concat(variables('namespace'), 'appgwsubnet')]",
@@ -62,7 +62,7 @@
         },
         "appSubnet": {
             "name": "[concat(variables('namespace'), 'cluster', 'subnet')]",
-            "prefix": "10.63.1.64/27",
+            "prefix": "10.63.1.0/26",
             "nsg": {
                 "name": "[concat(variables('namespace'), 'cluster', 'nsg')]"
             }
